@@ -11,7 +11,11 @@
     <h1>WeHelp第5屆申請表單 申請人：胡乃云</h1>
     <h2 class="first">1. 兩百字內的個人簡介</h2>
     <h3>
-      政大哲學系畢業，曾任記者、採訪編輯、線上課程內容編輯與PM，全職加上接案共有五年工作經驗。
+      政大哲學系畢業，曾任記者、採訪編輯、線上課程內容編輯與PM，<span
+        id="blackAndRed"
+        onclick="change()"
+        >全職加上接案共有五年工作經驗。</span
+      >
     </h3>
     <h3>
       申請WeHelp的契機是源自於個人專案的卡關（已有想做的題目，儘管學完全端線上課卻不知如何開始，也許是技術底不夠紮實，也許是缺乏前輩的引導），看到WeHelp成果報告上學長姐們都展示了很棒的作品，希望自己也能像他們一樣做出令人驚豔的個人專案。
@@ -73,5 +77,16 @@
     <h3>第一次申請。</h3>
     <h2>9. 其他想要對我們說的事情？</h2>
     <h3>希望有機會加入WeHelp，和大家一起朝成為優秀工程師的目標邁進！</h3>
+
+    <script>
+      function change() {
+        let spanElement = document.querySelector("#blackAndRed");
+        if (spanElement.style.color == "black") {
+          spanElement.style.color = "red";
+        } else {
+          spanElement.style.color = "black";
+        }
+      }
+    </script>
   </body>
 </html>
